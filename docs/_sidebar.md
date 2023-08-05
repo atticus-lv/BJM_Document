@@ -10,6 +10,8 @@
 
 	+ [如何反馈bug](./QA/bugReport.md)
 
+	+ [测试](./QA/test.md)
+
 
 + 功能介绍
 
