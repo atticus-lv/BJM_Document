@@ -22,11 +22,17 @@
         logo: '/_res/logo/logo.png',
         name: '臻品斑斓',
         //
-        search: 'auto', // 默认值
-        placeholder: '搜索',
-        noData: '找不到结果!',
+        search: {
+          placeholder: '搜索',
+          noData: '找不到结果!',
+        }
       };
     </script>
+    <style type="text/css">
+      .content {
+        overflow: auto;
+      }
+    </style>
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
