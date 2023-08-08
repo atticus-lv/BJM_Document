@@ -10,7 +10,7 @@
 
 	+ [如何反馈bug](./QA/bugReport.md)
 
-	+ [测试](./QA/test.md)
+[//]: # (	+ [测试]&#40;./QA/test.md&#41;)
 
 
 + 功能介绍
