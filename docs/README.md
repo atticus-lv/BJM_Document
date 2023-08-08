@@ -1,13 +1,15 @@
 # BJM文档
 
-### 介绍
+[test website](https://sketchfab.com/models/02bdb901643c4a8e99158e2c9327f6fe/embed?ui_theme=dark ':include :type=iframe width=10% height=720px')
 
-> BJM是一款基于blender的珠宝一体化解决方案，适用于3d紫蜡打印技术
+Q&A 常见问题
 
-+ Q&A
++ [安装常见问题](./QA/安装常见问题.md)
 
-    + [安装常见问题](./QA/安装常见问题.md)
-	
-	+ [使用常见问题](./QA/使用常见问题.md)
++ [使用常见问题](./QA/使用常见问题.md)
 
-	+ [如何反馈bug](./QA/bugReport.md)
++ [如何反馈bug](./QA/bugReport.md)
+
+臻品模型鉴赏
+
+[模型展示](./Show/models.md)
