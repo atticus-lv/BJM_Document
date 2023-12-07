@@ -6,7 +6,7 @@
 
 3. gob插件zbrush路径是否填写正确
 
-   ![](./res/goz插件.jpg)
+   ![](./res/GOZ插件.jpg)
 
 ## ZBrush>Blender失败
 
