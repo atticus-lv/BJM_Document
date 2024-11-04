@@ -8,7 +8,7 @@
 	
 	+ [使用常见问题](./QA/使用常见问题.md)
     
-    + [GOZ常见问题](./QA/GOZ.GOB常见问题.md)
+    + [GOZ失败](./QA/GOZ.GOB失败.md)
     
 	+ [如何反馈bug](./QA/bugReport.md)
 
