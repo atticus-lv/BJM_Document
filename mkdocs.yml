@@ -19,7 +19,7 @@ theme:
 #  custom_dir: custom/overrides
 
   logo: assets/bjm_b_white.png
-  language: en
+  language: zh
   features:
     - navigation.tabs
     - navigation.tabs.sticky
