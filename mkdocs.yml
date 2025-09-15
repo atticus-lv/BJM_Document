@@ -4,9 +4,9 @@ site_url: https://atticus.github.io/BJM_Document/
 site_author: atticus
 
 #Repository
-repo_name: atticus-lv/BJM_Document
-repo_url: https://github.com/atticus-lv/BJM_Document
-edit_uri: edit/master/docs/
+#repo_name: atticus-lv/BJM_Document
+#repo_url: https://github.com/atticus-lv/BJM_Document
+#edit_uri: edit/master/docs/
 
 theme:
   name: material
