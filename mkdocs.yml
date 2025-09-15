@@ -4,16 +4,22 @@ site_url: https://atticus.github.io/BJM_Document/
 site_author: atticus
 
 #Repository
-repo_name: atticus-lv/BJM_Document
-repo_url: https://github.com/atticus-lv/BJM_Document
-edit_uri: edit/master/docs/
+#repo_name: atticus-lv/BJM_Document
+#repo_url: https://github.com/atticus-lv/BJM_Document
+#edit_uri: edit/master/docs/
+
+# Plugins
+plugins:
+  - offline
+  - search
+  - blog
 
 theme:
   name: material
 #  custom_dir: custom/overrides
 
   logo: assets/bjm_b_white.png
-
+  language: en
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -23,13 +29,13 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: default
       toggle:
-        icon: material/toggle-switch
+        icon: material/brightness-4
         name: 切换到深色模式
     # Dark mode
     - media: "(prefers-color-scheme: light)"
       scheme: slate
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/brightness-7
         name: 切换到浅色模式
 
 nav:
@@ -46,9 +52,6 @@ nav:
       - 编辑模式: functions/edit_mode.md
       - 雕刻模式: functions/sculpt_mode.md
       - 其他菜单: functions/other_menu.md
-  - 更新日志:
-      - Log/1.7.4.md
-      - Log/1.7.3.md
-      - Log/1.7.2.md
-      - Log/1.7.1.md
-      - Log/1.7.0.md
+
+  - 更新/发布:
+    - blog/index.md
