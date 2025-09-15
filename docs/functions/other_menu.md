@@ -2,13 +2,9 @@
 
 #### 材质菜单(Q)
 
-<div style="display: flex;">
-  <img src="functions/res/04-节点菜单/材质菜单.png" alt="材质菜单" style="width: 50%" />
-  <div style="width: 50%; padding-left: 20px;">
-    <strong style="color:gray;">着色编辑器快速添加节点的菜单.</strong>
-  </div>
-</div>
+![合成菜单](res/04-节点菜单/材质菜单.png)
 
+> 着色编辑器快速添加节点的菜单
 
 #### 合成菜单(Q)
 

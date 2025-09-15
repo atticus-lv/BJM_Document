@@ -1,0 +1,54 @@
+site_name: BJM 用户手册
+
+site_url: https://atticus.github.io/BJM_Document/
+site_author: atticus
+
+#Repository
+repo_name: atticus-lv/BJM_Document
+repo_url: https://github.com/atticus-lv/BJM_Document
+edit_uri: edit/master/docs/
+
+theme:
+  name: material
+#  custom_dir: custom/overrides
+
+  logo: assets/bjm_b_white.png
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: 切换到深色模式
+    # Dark mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: 切换到浅色模式
+
+nav:
+  - 主页: index.md
+  - 常见问题:
+      - QA/安装常见问题.md
+      - QA/使用常见问题.md
+      - QA/GOZ.GOB失败.md
+      - 如何反馈bug: QA/bugReport.md
+  - 功能查询:
+      - 快捷键总览: functions/shortcuts.md
+      - 3d视图: functions/view3d.md
+      - 物体模式: functions/object_mode.md
+      - 编辑模式: functions/edit_mode.md
+      - 雕刻模式: functions/sculpt_mode.md
+      - 其他菜单: functions/other_menu.md
+  - 更新日志:
+      - Log/1.7.4.md
+      - Log/1.7.3.md
+      - Log/1.7.2.md
+      - Log/1.7.1.md
+      - Log/1.7.0.md
