@@ -68,6 +68,27 @@ html {
     transform: translateY(.2rem);
 }
 
+/* Ensure raster logo images match the previous SVG sizing */
+.md-header__topic .mdx-header--logo img {
+    display: inline-block;
+    height: 20px;
+    width: auto;
+    transform: translateY(.2rem);
+}
+
+/* Align logo and text nicely */
+.mdx-header--logo {
+    display: inline-flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+/* Remove vertical nudge when using flex centering */
+.md-header__topic .mdx-header--logo svg,
+.md-header__topic .mdx-header--logo img {
+    transform: none;
+}
+
 
 
 [dir=ltr] .md-header__source {
