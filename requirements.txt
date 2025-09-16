@@ -1,1 +1,5 @@
 mkdocs-material
+stepslist
+
+# Requirements for plugins
+regex>=2022.4

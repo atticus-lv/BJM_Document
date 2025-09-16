@@ -1,1 +1,8 @@
-# 欢迎来到BJM用户手册
+---
+template: home.html
+title: 臻品斑斓
+hide:
+  - footer
+---
+
+
