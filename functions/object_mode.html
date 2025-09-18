@@ -1,0 +1,1220 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="atticus">
+      
+      
+        <link rel="canonical" href="https://atticus.github.io/BJM_Document/functions/object_mode.html">
+      
+      
+        <link rel="prev" href="view3d.html">
+      
+      
+        <link rel="next" href="edit_mode.html">
+      
+      
+      <link rel="icon" href="../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>物体模式 - BJM 用户手册</title>
+      
+    
+    
+  
+      <link rel="stylesheet" href="../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+  <link rel="stylesheet" href="../assets/stylesheets/customs.css">
+  <link rel="stylesheet" href="../assets/stylesheets/partials/colors.css">
+  <link rel="stylesheet" href="../assets/stylesheets/partials/setup.css">
+  <link rel="stylesheet" href="../assets/stylesheets/partials/layout.css">
+  <link rel="stylesheet" href="../assets/stylesheets/partials/reference.css">
+  <link rel="stylesheet" href="../assets/stylesheets/partials/typeset.css">
+
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#q" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="不再显示此消息">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+              </button>
+            
+            
+  <div class="announce_text">
+    Some info and updates here! to change this text edit custom/overrides/main.html
+  </div>
+
+          </div>
+          
+            <script>var el=document.querySelector("[data-md-component=announce]");if(el){var content=el.querySelector(".md-typeset");__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0)}</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      <!-- Determine classes -->
+
+
+  
+
+
+<!-- Header -->
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid--wide"
+    aria-label="页眉"
+  >
+
+
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title" style="margin-left: .6rem;">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="mdx-header--logo">
+              <img src="assets/bjm_b_white.png" alt="BJM Logo" style="max-height: 500px" />
+             臻品斑斓
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              物体模式
+            
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation tabs (sticky) -->
+    
+        
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  主页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../QA/%E5%AE%89%E8%A3%85%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  常见问题
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="shortcuts.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  功能查询
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../blog/index.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  更新/发布
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+    
+
+    <!-- empty space div -->
+     <div class="void"></div>
+
+    <!-- Color palette toggle -->
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+
+    <!-- User preference: color palette -->
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+
+    <!-- Site language selector -->
+    
+
+    <!-- Button to open search modal -->
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+
+      <!-- Search interface -->
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Repository information -->
+    
+  </nav>
+
+</header>
+
+
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="BJM 用户手册" class="md-nav__button md-logo" aria-label="BJM 用户手册" data-md-component="logo">
+      
+  <img src="../assets/bjm_b_white.png" alt="logo">
+
+    </a>
+    BJM 用户手册
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    主页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../QA/%E5%AE%89%E8%A3%85%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.html" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    常见问题
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    功能查询
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            功能查询
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="shortcuts.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    快捷键总览
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="view3d.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3d视图
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    物体模式
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="object_mode.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    物体模式
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#q" class="md-nav__link">
+    <span class="md-ellipsis">
+      物体模式工具箱(Q)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bjmqq" class="md-nav__link">
+    <span class="md-ellipsis">
+      BJM菜单(Q,Q)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#altc" class="md-nav__link">
+    <span class="md-ellipsis">
+      转换饼菜单(Alt+C)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    <span class="md-ellipsis">
+      选择菜单(A拖拽)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h" class="md-nav__link">
+    <span class="md-ellipsis">
+      物体隐藏(H)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shifta" class="md-nav__link">
+    <span class="md-ellipsis">
+      添加预设物体(Shift+A拖拽)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ctrlc" class="md-nav__link">
+    <span class="md-ellipsis">
+      复制属性(Ctrl+C)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="edit_mode.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    编辑模式
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sculpt_mode.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    雕刻模式
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="other_menu.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    其他菜单
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../blog/index.html" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    更新/发布
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#q" class="md-nav__link">
+    <span class="md-ellipsis">
+      物体模式工具箱(Q)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bjmqq" class="md-nav__link">
+    <span class="md-ellipsis">
+      BJM菜单(Q,Q)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#altc" class="md-nav__link">
+    <span class="md-ellipsis">
+      转换饼菜单(Alt+C)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    <span class="md-ellipsis">
+      选择菜单(A拖拽)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h" class="md-nav__link">
+    <span class="md-ellipsis">
+      物体隐藏(H)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shifta" class="md-nav__link">
+    <span class="md-ellipsis">
+      添加预设物体(Shift+A拖拽)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ctrlc" class="md-nav__link">
+    <span class="md-ellipsis">
+      复制属性(Ctrl+C)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>物体模式</h1>
+
+
+<h2 id="q">物体模式工具箱(Q)<a class="headerlink" href="#q" title="Permanent link">&para;</a></h2>
+<p><img alt="物体模式工具箱" src="res/shortcuts/%E7%89%A9%E4%BD%93%E6%A8%A1%E5%BC%8F%E5%B7%A5%E5%85%B7%E7%AE%B1.png" /></p>
+<ol>
+<li>上方为镶嵌的常用功能,开虎爪要转到JewelCraft插件面板</li>
+<li>晶格投影 <code>单个轴向用晶格将被选物体投影吸附至活动物体.</code></li>
+<li>晶格缩裹 <code>顶视图以晶格为父级将被选物体吸附至活动物体,可选择晶格G,R,S变换随时调整位置.</code></li>
+<li>缩裹 <code>一般用于非实体网格以所在视图投影至活动物体.</code></li>
+<li>缩放 <code>将选定对象以单个轴向为基准缩放到指定大小.</code></li>
+<li>创建实例面 <code>选中物体移至指定集合并用节点实例,规范操作为物体以顶视图正确朝向 、物体原点在世界中心.</code></li>
+<li>快速晶格 <code>适配选中物体形状新建晶格修改器,左方'晶格'为调整晶格参数按钮.</code></li>
+<li>重做历史 <code>以文字列表的形式显示操作历史动作,可选重做特地历史.</code></li>
+<li>渲染可见/禁用 <code>快速开启物体的全部对于摄像机光线的可见性.</code></li>
+<li>重拓扑功能 <code>设置重拓扑对称轴向 面数 确认重构按钮.</code></li>
+<li>单一化/关联 <code>将网格数据从活动物体独立/传递到指定的物体.</code></li>
+<li>合并 <code>将选中物体合并到活动物体.</code></li>
+<li>镜像 <code>围绕一个或多个轴镜像选定对象，产生新的物体.</code></li>
+<li>生成布尔体 <code>合并重构并精简选中的物体,以便于布尔使用.</code></li>
+<li>重构称重 <code>合并选中的物体(必须要有活动物体),添加重构修改器,偏移x轴出来然后称重.</code></li>
+<li>硬金称重 <code>指定电镀的厚度,精确模拟测量硬金重量.</code></li>
+<li>清空父级 <code>清除父级并保留变换结果.</code></li>
+<li>仅位置 <code>仅变换物体位置，而不影响旋转或缩放.</code></li>
+<li>快捷键 <code>开启热键显示,一般用于录屏或演示使用.</code></li>
+</ol>
+<p>以下为Q+快捷键功能</p>
+<ul>
+<li>QA:资产管理器 <code>快捷调用资产.</code></li>
+<li>QS:材质菜单 <code>设置物体的材质,可同时设置多个物体.</code></li>
+<li>QC:节点材质 <code>用于设置QS菜单无效,节点生成物体的材质,仅对活动物体有效.</code></li>
+<li>QD:移除材质 <code>移除选中物体的全部材质.</code></li>
+<li>QW:仅原点 <code>变换物体原点,同时保持形状位置不变.</code></li>
+<li>QG:更新体素布尔 <code>快速更新修改过的体素布尔的物体或集合,后两个按钮分别为选/不选、显/隐 布尔物体</code></li>
+<li>QV,QF:吸附点/面 <code>一键设置吸附点/面的快速预设,并开启吸附功能.</code></li>
+<li>QZ:称重 <code>根据密度计算活动物体的重量,有互相穿插的网格会重复计算导致金重增加.</code></li>
+<li>QE:称重重命名 <code>根据密度计算活动物体的重量,复制到剪切板,然后重命名物体后缀.</code></li>
+<li>QQ:BJM菜单,如下</li>
+</ul>
+<h2 id="bjmqq">BJM菜单(Q,Q)<a class="headerlink" href="#bjmqq" title="Permanent link">&para;</a></h2>
+<p><img alt="BJM菜单" src="res/shortcuts/BJM%E8%8F%9C%E5%8D%95.png" /></p>
+<blockquote>
+<h6 id="_1">编辑<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h6>
+</blockquote>
+<ol>
+<li>置换 <code>预设多个常用置换灰度图,可在修改器面板快速调整UV.</code></li>
+<li>移动/旋转/缩放 <code>参数化变换物体.</code></li>
+<li>线成浮雕片 <code>以顶视图且网格Z轴=0生成浮雕片.</code></li>
+<li>曲线置换 <code>选择曲线/网格线对物体刻线.(性能较低,建议使用自定义曲线描线然后体素布尔.)</code></li>
+<li>曲线布尔 <code>以视图投影的形式布尔(裁剪)物体,运算速度比传统布尔快且不会布尔失败.</code></li>
+<li>平面重构 <code>增加单一平面物体的面数,作变形使用.</code></li>
+<li>居中 <code>指定一个或多个轴镜像居中物体.</code></li>
+<li>封闭孔洞 <code>用节点快速封闭开放网格的孔洞.</code></li>
+<li>
+<p>节点合并 <code>用几何节点合并选中的物体,一般用于整体变形、渲染.</code></p>
+</li>
+<li>
+<p>Q,QT:掏底 <code>对封闭的网格指定厚度掏底，可仅保留内壳.</code></p>
+</li>
+</ol>
+<blockquote>
+<h6 id="_2">节点<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h6>
+</blockquote>
+<ol>
+<li>物体材质 <code>用几何节点的方式赋予物体材质.</code></li>
+<li>灰度图 <code>配合BJM插件面板的'存储物体属性到图像'使用,模型生成灰度图.</code></li>
+<li>测量 <code>显示网格两点的直线距离,用以标注模型尺寸.</code></li>
+<li>标注信息 <code>特定字符串+网格箭头指向物体.</code></li>
+<li>尺寸&amp;金重 <code>可选物体多视图,标注尺寸+金重,与称重功能同理,如网格有穿插则会重复计算.</code></li>
+<li>
+<p>图片转网格 <code>用网格物体在修改器面板指定图像生成像素对应的网格.</code></p>
+</li>
+<li>
+<p>Q,QC:实时尺寸 <code>实时显示在任意修改器之后的物体尺寸.</code></p>
+</li>
+</ol>
+<blockquote>
+<h6 id="_3">形变<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h6>
+</blockquote>
+<ol>
+<li>UV网格 <code>节点展UV用于展开没有网格面的物体、网格-&gt;UV一般与原始网格配合表面形变用于反向展开曲面物体</code>
+2.
+获取UV <code>获取指定物体的UV属性至网格形态,物体模式移动旋转缩放或晶格变形可应用至指定物体的UV变换,使曲面流动能更灵活控制.</code></li>
+<li>曲面流动 <code>需确保形变物体与曲面的位置、旋转、缩放都为默认值,1模式为3、1+3使用，2模式为2+3、1+2+3使用.</code></li>
+<li>锥化 <code>高级梯形化,可调节中间弧度、控制影响范围.</code></li>
+<li>扭曲 <code>沿指定的坐标轴进行旋转.</code></li>
+<li>快速改手寸 <code>设置正确的原手寸,快速缩放戒指、手镯的大小,加上对应手寸编号.</code></li>
+<li>弯曲 <code>沿指定的坐标轴进行网格弯曲.</code></li>
+<li>四向弯曲 <code>以顶/前视图为基准,球形化弯曲网格.</code></li>
+<li>
+<p>双曲线形变 <code>一般用于需要两条曲(网格)线形变的手镯/戒指,可启用任意一/两条曲线形变.</code></p>
+</li>
+<li>
+<p>Q,QZ:网格线变形 <code>网格线版的曲线修改器,可调节倾斜 结束点等多个曲线参数.</code></p>
+</li>
+<li>Q,QV:精确改手寸 <code>可设置任意保护区域,精确改戒指/手镯的手寸.</code></li>
+<li>Q,QB:表面形变 <code>与形态键结合使用实时变形(除曲面编辑模式外),改变网格点数后不用反复绑定/解绑.</code></li>
+</ol>
+<p>合并/版本 <code>使用几何节点合并选中项为一个物体,一般用于渲染或整体形变.</code></p>
+<blockquote>
+<h6 id="_4">生成<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h6>
+</blockquote>
+<ol>
+<li>螺旋 <code>围绕一个轴向进行车面,将内出网格视为轮廓,可重建切面段数.</code></li>
+<li>曲线散布 <code>在一条线上按个数/间隔距离散布物体.</code></li>
+<li>圆形分布 <code>在指定大小的圆形范围内以中心为朝向分布物体.</code></li>
+<li>
+<p>圆弧实体 <code>快速生成一个可调节弧度的实体.</code></p>
+</li>
+<li>
+<p>Q,QW:网格阵列 <code>以自身为中心网格阵列物体,可选交叉、范围,单行阵列即为居中的自带阵列修改器.</code></p>
+</li>
+<li>Q,QR:圆周阵列 <code>沿指定的坐标轴进行参数化圆周阵列复制.</code></li>
+<li>Q,QG:实现实例 <code>将几何节点的实例转换成真实的几何网格.</code></li>
+<li>Q,QF:翻转 <code>沿指定的坐标轴进行180°旋转复制物体.</code></li>
+<li>Q,QE:挤出 <code>以顶/前视图的朝向挤出网格,自带细分\卡边,多数情况下优于实体化修改器.</code></li>
+<li>Q,QD:双向挤出 <code>沿指定的坐标轴进行双向挤出物体.</code></li>
+</ol>
+<blockquote>
+<h6 id="_5">线条<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h6>
+</blockquote>
+<ol>
+<li>编织 <code>沿路径生成编织网格.</code></li>
+<li>线扫掠 <code>沿路径扫掠两次,合并为带凹槽的网格.</code></li>
+<li>珠边 <code>在线上按距离实例珠子,可按视图压平,底边可对齐指定物体法向.</code></li>
+<li>珠子 <code>用网格点生成珠子,可调节网格属性单个改变大小.</code></li>
+<li>曲线放样 <code>复制网格线按顺序放样成面,不限网格线点数.</code></li>
+<li>手工花丝 <code>模拟手工缠绕花丝,较为卡顿,流畅版本直接用A花丝节点新功能.</code></li>
+<li>
+<p>均分曲线 <code>两条线段之间均等偏移出对应数目的网格.</code></p>
+</li>
+<li>
+<p>Q,QX:线封面 <code>细分路径并按视图封面,可选封面-布尔快速描字体.</code></p>
+</li>
+<li>Q,QS:自定义曲线 <code>参数化单导轨,可实时变换无数种切面.</code></li>
+<li>Q,QA:花丝 <code>参数化麻绳,实时流畅调整数据,集成绝大部分用途.</code></li>
+</ol>
+<h2 id="altc">转换饼菜单(Alt+C)<a class="headerlink" href="#altc" title="Permanent link">&para;</a></h2>
+<p><img alt="转换菜单" src="res/01-%E7%89%A9%E4%BD%93%E6%A8%A1%E5%BC%8F/%E8%BD%AC%E6%8D%A2%E8%8F%9C%E5%8D%95.png" /></p>
+<blockquote>
+<p>转换物体的类型,应用/删除全部修改器/应用&amp;合并以便出货使用,实例独立化.</p>
+</blockquote>
+<h2 id="a">选择菜单(A拖拽)<a class="headerlink" href="#a" title="Permanent link">&para;</a></h2>
+<p><img alt="选择菜单" src="res/01-%E7%89%A9%E4%BD%93%E6%A8%A1%E5%BC%8F/%E9%80%89%E6%8B%A9%E8%8F%9C%E5%8D%95.png" /></p>
+<blockquote>
+<p>按物体关系、类型、名称、修改器、集合选择物体.</p>
+</blockquote>
+<h2 id="h">物体隐藏(H)<a class="headerlink" href="#h" title="Permanent link">&para;</a></h2>
+<p><img alt="物体隐藏" src="res/01-%E7%89%A9%E4%BD%93%E6%A8%A1%E5%BC%8F/%E7%89%A9%E4%BD%93%E9%9A%90%E8%97%8F.png" /></p>
+<blockquote>
+<p>物体层面的隐藏/显示/交替隐藏.</p>
+</blockquote>
+<h2 id="shifta">添加预设物体(Shift+A拖拽)<a class="headerlink" href="#shifta" title="Permanent link">&para;</a></h2>
+<div style="display: flex;">
+  <img src="functions/res/01-物体模式/添加预设物体.png" alt="添加预设物体" style="zoom: 25%;" />
+  <div style="width: 50%; padding-left: 20px;">
+    <strong style="color:gray;">快速添加常用物体</strong>
+  </div>
+</div>
+
+<h2 id="ctrlc">复制属性(Ctrl+C)<a class="headerlink" href="#ctrlc" title="Permanent link">&para;</a></h2>
+<div style="display: flex;">
+  <img src="functions/res/01-物体模式/复制属性.png" alt="复制属性" style="width: 50%" />
+  <div style="width: 50%; padding-left: 20px;">
+    <strong style="color:gray;">复制选中物体、活动物体的修改器、位置旋转缩放</strong>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="view3d.html" class="md-footer__link md-footer__link--prev" aria-label="上一页: 3d视图">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                3d视图
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="edit_mode.html" class="md-footer__link md-footer__link--next" aria-label="下一页: 编辑模式">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                编辑模式
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+    
+    
+      Made with
+      <a
+        href="https://squidfunk.github.io/mkdocs-material/"
+        target="_blank" rel="noopener"
+      >
+        Material
+      </a> by Atticus
+    
+  </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.sections", "navigation.expand", "navigation.prune", "navigation.footer", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "announce.dismiss", "content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "content.footnote.tooltips", "search.highlight", "search.share", "search.suggest"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+  
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  <!-- <script src="../assets/javascripts/custom.js"></script> -->
+
+  </body>
+</html>
