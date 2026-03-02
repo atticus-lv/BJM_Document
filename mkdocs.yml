@@ -12,6 +12,7 @@ site_author: atticus
 plugins:
   - offline
   - search
+  - literate-nav: {}
   - blog
   - tags
 
@@ -114,8 +115,7 @@ nav:
       - QA/GOZ.GOB失败.md
       - 如何反馈bug: QA/bugReport.md
   - 功能查询:
-      - 几何节点:
-          - 编辑: functions/geonodes/编辑.md
+      - 修改器: functions/geonodes/
       - 快捷键:
           - 快捷键总览: functions/shortcuts/shortcuts.md
           - 3d视图: functions/shortcuts/view3d.md

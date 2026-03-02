@@ -1,5 +1,5 @@
 mkdocs-material
 stepslist
-
+mkdocs-literate-nav
 # Requirements for plugins
 regex>=2022.4
