@@ -114,12 +114,15 @@ nav:
       - QA/GOZ.GOB失败.md
       - 如何反馈bug: QA/bugReport.md
   - 功能查询:
-      - 快捷键总览: functions/shortcuts.md
-      - 3d视图: functions/view3d.md
-      - 物体模式: functions/object_mode.md
-      - 编辑模式: functions/edit_mode.md
-      - 雕刻模式: functions/sculpt_mode.md
-      - 其他菜单: functions/other_menu.md
+      - 几何节点:
+          - 编辑: functions/geonodes/编辑.md
+      - 快捷键:
+          - 快捷键总览: functions/shortcuts/shortcuts.md
+          - 3d视图: functions/shortcuts/view3d.md
+          - 物体模式: functions/shortcuts/object_mode.md
+          - 编辑模式: functions/shortcuts/edit_mode.md
+          - 雕刻模式: functions/shortcuts/sculpt_mode.md
+          - 其他菜单: functions/shortcuts/other_menu.md
 
   - 更新/发布:
-    - blog/index.md
+      - blog/index.md
